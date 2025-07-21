@@ -1,0 +1,92 @@
+.navbar{
+    position: fixed;
+    padding: 15px 0 15px 0;
+    width: 100%;
+}
+
+.navbar .nav-link a{
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+    text-decoration: none;
+    color:black
+}
+
+.navbar .nav-link a:hover{
+    color: #f25353;
+}
+.navbar .nav-link .active{
+   background-color: #f25353;
+   color: white;
+}
+.navbar .nav-link .active:hover{
+    color: white;
+}
+/* Remove duplicate .typewriter class and combine styles */
+.typewriter {
+    display: inline-block;
+    position: relative;
+    width: 0;
+    margin: 40px auto 20px; 
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2.5rem;
+    font-weight: bold;
+    max-width: 800px;
+    padding: 20px;
+    color: #333;
+    animation: 
+        typing 3.5s steps(40, end) forwards,
+        blink-caret .75s step-end infinite;
+}
+
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+
+
+/* Media query untuk tablet */
+@media screen and (max-width: 768px) {
+    .typewriter {
+        font-size: 2rem;
+        margin: 35px auto 15px; 
+        padding: 15px;
+        width: 90%;
+    }
+}
+
+/* Media query untuk mobile */
+@media screen and (max-width: 480px) {
+    .typewriter {
+        font-size: 1.3rem;
+        margin: 30px auto 10px; 
+        padding: 10px;
+        width: 95%;
+        white-space: normal;
+        text-align: center;
+        border-right: none;
+        display: block;
+        animation: fadeIn 1s ease-in forwards;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+}
+.img-fluid {
+    max-width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .img-fluid {
+      margin: 0 auto;
+      display: block;
+    }
+  }
